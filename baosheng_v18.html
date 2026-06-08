@@ -131,14 +131,14 @@ html,body{width:100%;height:100%;overflow:hidden;background:#111;font-family:'No
 .qrl{font-size:1.4vh;color:#8B6914;letter-spacing:0.1em;writing-mode:horizontal-tb;margin-bottom:0.3vh;}
 .qr{font-size:1.6vh;color:#5a3a00;letter-spacing:0.05em;writing-mode:horizontal-tb;}
 .qbtns{display:flex;flex-direction:column;gap:0.8vh;padding:1.5vh 18px;background:rgba(139,105,20,0.06);border-top:1px solid rgba(139,105,20,0.2);position:relative;z-index:1;}
-.jc{background:linear-gradient(to right,rgba(255,255,255,0.18),rgba(255,255,255,0));border:1px solid rgba(255,255,255,0.45);border-radius:16px;padding:3vh 3vw;width:520px;height:884px;transform:translateY(-80px);display:flex;flex-direction:column;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);}
+.jc{background:linear-gradient(to right,rgba(255,255,255,0.18),rgba(255,255,255,0));border:1px solid rgba(255,255,255,0.45);border-radius:16px;padding:3vh 3vw;width:780px;height:480px;display:flex;flex-direction:column;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);}
 .jt{font-size:2.2vh;font-weight:500;color:#fff;margin-bottom:1.5vh;letter-spacing:0.08em;text-shadow:0 1px 3px rgba(0,0,0,0.35);}
 .jx{font-size:1.8vh;color:#fff;line-height:1.9;flex:1;overflow-y:auto;text-shadow:0 1px 3px rgba(0,0,0,0.25);}
 .jbtns{display:flex;gap:1.5vw;margin-top:auto;padding-top:2vh;width:100%;}
 .pbtn{background:linear-gradient(to right,rgba(255,255,255,0.18),rgba(255,255,255,0));border:1px solid rgba(255,255,255,0.45);border-radius:50px;padding:1vh 2.5vw;font-size:1.8vh;font-family:inherit;cursor:pointer;letter-spacing:0.08em;color:#fff;text-shadow:0 1px 3px rgba(0,0,0,0.35);}
 
 
-.card-scene{width:360px;height:612px;perspective:900px;}
+.card-scene{width:520px;height:884px;perspective:900px;transform:translateY(-80px);}
 .card-wrap{width:100%;height:100%;position:relative;transform-style:preserve-3d;}
 .card-wrap.go{animation:flip 1.6s ease-in-out forwards;}
 @keyframes flip{
@@ -291,7 +291,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:#111;font-family:'No
         <div class="card-face card-front-f" id="cardFront"></div>
       </div>
     </div>
-    <div id="s7next" style="width:360px;display:flex;flex-direction:row;gap:4px;">
+    <div id="s7next" style="width:520px;display:flex;flex-direction:row;gap:4px;">
       <button class="gb" onclick="goS8()" style="color:#fff;flex:1;height:5.5vh;display:flex;align-items:center;justify-content:center;border-radius:50px 8px 8px 50px;">解籤</button>
       <button class="gb" onclick="savePhoto()" style="color:#fff;flex:1;height:5.5vh;display:flex;align-items:center;justify-content:center;border-radius:8px 50px 50px 8px;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></button>
     </div>
